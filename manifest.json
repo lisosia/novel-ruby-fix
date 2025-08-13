@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Edge Ruby Reader Fix",
+  "version": "1.0",
+  "description": "Edgeの読み上げでルビ（rubyタグ）が二重に読み上げられる問題を回避する拡張機能",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.syosetu.com/*",
+        "*://kakuyomu.jp/*",
+        "*://syosetu.org/*",
+        "*://www.akatsuki-novels.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
