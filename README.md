@@ -20,4 +20,5 @@ Edge の読み上げ機能でルビ（`<ruby>`タグ）と本文が二重に読�
 
 ## 動作概要
 - `<ruby>` タグを `<span class="ruby-outer" data-ruby-base="漢字"><span class="ruby-inner">よみかた</span></span>` に変換
-- CSS でルビ表示を再現しつつ、Edge 読み上げで正しく発音されるよう調整
+- CSS でルビ表示を再現
+- これにより、見た目は元のままで、読み上げ対象をルビのみに限定できる
